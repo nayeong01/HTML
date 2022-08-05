@@ -1,0 +1,14 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+h1{
+    font: 30pt 'Nanum Pen Script';
+    font-weight: bold;
+    line-height: 20pt;
+    color : rgba(50, 91, 151, 0.966);
+    background-color: rgb(198, 219, 255);
+    text-align: center;
+}
+
+p{
+    font: 20pt 'Nanum Pen Script';
+    background-color: rgb(211, 248, 219);
+}

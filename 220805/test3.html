@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>정의 리스트, 표 만들기</title>
+    </head>
+    <body>
+        <h3>웹 브라우저 종류</h3>
+        <hr>
+        <dl>
+            <dt><strong>Internet Explorer</strong></dt>
+            <dd>마이크로소프트에서 만든 브라우저로 현재
+                국내 시장에서 가장 많이 사용한다.
+            </dd>
+            <dt><strong>Firefox</strong></dt>
+            <dd>Mozila 재단에서 오픈 소스로 만든 것으로 W3C의
+                웹 표준을 선도한다.
+            </dd>
+            <dt><strong>Chrome</strong></dt>
+            <dd>구글에서 만든 것으로 좋은 디버거를 갖추고 있어
+                디버깅에 많이 사용한다.
+            </dd>
+        </dl>
+        <h3>기본 구조를 가진 표</h3>
+        <hr>
+        <table border="3">
+            <thead>
+                <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+            </thead>
+            <tfoot><tr><th>합</th><th>225</th><th>230</th></tr></tfoot>
+            <tbody>
+                <tr><td>황기태</td><td>80</td><td>70</td></tr>
+                <tr><td>이재문</td><td>95</td><td>99</td></tr>
+                <tr><td>이병은</td><td>40</td><td>61</td></tr>
+            </tbody>
+        </table>
+        <h3>표에 이미지 삽입하기</h3>
+        <hr>
+        <table>
+            <caption>좋아하는 영화</caption>
+            <tbody>
+                <tr>
+                    <td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=1790335&qvt=0&query=%EC%98%81%ED%99%94%20%EC%9D%B8%EC%85%89%EC%85%98%20%EC%A0%95%EB%B3%B4"
+                        target="_blank"><img src="in.jpg" width="250"></a></td>
+                    <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%98%81%ED%99%94+%EA%B2%9F%EC%95%84%EC%9B%83%EC%A0%95%EB%B3%B4&oquery=%EC%98%81%ED%99%94+%EC%9D%B8%EC%85%89%EC%85%98+%EC%A0%95%EB%B3%B4&tqi=hXy9odp0JXossntacvdssssssAd-268437"
+                        target="_blank"><img src="get.jpg" width="250"></a></td>
+                    <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%98%81%ED%99%94+%EC%86%8C%EC%9A%B8+%EC%A0%95%EB%B3%B4&oquery=%EC%98%81%ED%99%94+%EA%B2%9F%EC%95%84%EC%9B%83%EC%A0%95%EB%B3%B4&tqi=hXy9Vwp0Jy0ssbTEuXossssssP0-322223"
+                        target="_blank"><img src="soul.jpg"width="250"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

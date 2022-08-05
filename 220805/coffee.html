@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>coffee</title>
+
+        <style>
+            body { font-family: Consolas, sans-serif; }
+            h1 { margin: 30px 0px; text-align: center; }
+            nav a{
+                position: relative;
+                margin: 0 50px;
+                font-size:1em;
+                color:#000000;
+                text-decoration: none;
+                }
+            html{
+                scroll-behavior: smooth; 
+                }
+        </style>
+
+    </head>
+    <body>
+        <h1>MY INFORMATION</h1>
+        <p style="text-align:center;">Hello, Welcome to my Webpage!</p>
+        <hr>
+        <nav align = "center">
+            <div id="underline"></div>
+            <a href="#tag1">ABOUT ME</a>
+            <a href="#tag2">LIKE</a>
+            <a href="#">DISLIKE</a>
+            <a href="#">WANT</a>
+        </nav>
+        <hr>
+        <script type="text/javascript">
+                var underline = document.querySelector('#underline');
+                var item = document.querySelectorAll('nav a');
+                function select(event){
+                    // console.log(event);
+                    underline.style.left = event.offsetLeft+"px";
+                    underline.style.width = event.offsetWidth+"px";
+                    // console.log(e.offsetLeft+"px");
+                   
+                }
+                item.forEach(link =>{
+                    link.addEventListener('click', (event)=>{
+                        select(event.target);
+                    })
+                })
+        </script>
+        </body>
+</html>

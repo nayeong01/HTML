@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Myself</title>
+
+        <style>
+            
+            body { font-family: Consolas, sans-serif; }
+            h1 { margin: 30px 0px; text-align: center; }
+            nav a{
+                position: relative;
+                margin: 0 50px;
+                font-size:1em;
+                color:#000000;
+                text-decoration: none;
+                }
+            html{
+                scroll-behavior: smooth; 
+                }
+        </style>
+
+    </head>
+    <body>
+        <h1>MY INFORMATION</h1>
+        <p style="text-align:center;">Hello, Welcome to my Webpage!</p>
+        <hr>
+        <nav align = "center">
+            <div id="underline"></div>
+            <a href="#tag1">ABOUT ME</a>
+            <a href="#tag2">LIKE</a>
+            <a href="#">DISLIKE</a>
+            <a href="#">WANT</a>
+        </nav>
+        <hr>
+        <script type="text/javascript">
+                var underline = document.querySelector('#underline');
+                var item = document.querySelectorAll('nav a');
+                function select(event){
+                    // console.log(event);
+                    underline.style.left = event.offsetLeft+"px";
+                    underline.style.width = event.offsetWidth+"px";
+                    // console.log(e.offsetLeft+"px");
+                   
+                }
+                item.forEach(link =>{
+                    link.addEventListener('click', (event)=>{
+                        select(event.target);
+                    })
+                })
+        </script>
+        <div class = "About" align = "center">
+        <a id="tag1"></a>
+        <h2 style="text-align:center;">-About Me-</h2>
+        <p style="text-align:center;">
+            NAME : KIM NA YEONG<br>
+            AGE : 27<br>
+            MAJOR : ECONOMICS<br>
+            NATION : KOREA<br>
+            CITY : CHEONG JU<br>
+            BIRTH DAY : 1/18<br>
+            MBTI : <a href="https://namu.wiki/w/INFJ" target="_blank">INFJ</a> < CLICK!<br>
+            <br>
+        </p>
+        </div>
+
+        <style>
+        .About{
+            background:lightblue;
+            margin: 60px;
+        }
+        </style>
+
+        <div class = "Like" align = "center">
+        <a id="tag2"></a>
+        <h2 style="text-align:center;">-LIKE-</h2>
+        <strong>1. Beak YeRin<br></strong>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o4tw2V2_oY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>This video is my favorite cover song!
+        <br>
+        <br>
+        <br>
+        <strong>2. Coffee<br></strong>
+        <a href="coffee.html" target="_blank"><img alt="coffee" src="coffee.jpg" width="550px"></a>
+        <br>
+        <br>
+        <br>
+        <strong>3. Study coding<br></strong>
+        <img alt="computer" src="computer.jpg" width="550px">
+        <br>
+        <br>
+        <br>
+        <strong>4. Exercise & Running<br><strong>
+        <img alt="working" src="working.jpg" width="550px">
+        <br>
+        <br>
+        <br>
+        <table> 
+            <strong>5. MOVIE</strong>
+            <tbody>
+                <tr>
+                    <td><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=1790335&qvt=0&query=%EC%98%81%ED%99%94%20%EC%9D%B8%EC%85%89%EC%85%98%20%EC%A0%95%EB%B3%B4"
+                        target="_blank"><img src="in.jpg" width="250"></a></td>
+                    <td><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%98%81%ED%99%94+%EA%B2%9F%EC%95%84%EC%9B%83%EC%A0%95%EB%B3%B4&oquery=%EC%98%81%ED%99%94+%EC%9D%B8%EC%85%89%EC%85%98+%EC%A0%95%EB%B3%B4&tqi=hXy9odp0JXossntacvdssssssAd-268437"
+                        target="_blank"><img src="get.jpg" width="250"></a></td>
+                    <td><a href="https://namu.wiki/w/%EC%86%8C%EC%9A%B8(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)"
+                        target="_blank"><img src="soul.jpg"width="250"></a></td>
+                </tr>
+            </tbody>
+        </table> 
+        
+        </div>
+
+        <style>
+        .Like{
+            background:lightblue;
+            margin: 60px;
+        }
+        </style>
+        <hr>
+    </body>
+    <footer>
+        <p>&copy; EZDesign LLC. All Rights Reserved.</p>
+        <address>
+        <a href="olive_yeong@naver.com">olive_yeong@naver.com</a>
+        </address>
+    </footer>
+</html>
