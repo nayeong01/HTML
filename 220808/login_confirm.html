@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+
+<title> Hello World! </title>
+<script>
+  // Arrow function to get all the GET parameters
+function getParameters(key = null) {
+  
+  // Address of the current window
+  let address = window.location.search
+
+  // Returns a URLSearchParams object instance
+  let parameterList = new URLSearchParams(address)
+
+  // Created a map which holds key value pairs
+  let map = new Map()
+
+  // Storing every key value pair in the map
+  parameterList.forEach((value, key) => {
+      map.set(key, value)
+  })
+
+  // Returning the map of GET parameters
+  return map
+}
+
+$(document).ready(function () {// Gets all the getParameters
+   let map = getParameters();
+
+   let id  = map.get("id");
+   let pass = map.get("pass");
+  // let Elvis =map.get("Elvis"); 
+  /*사이에서 입력을 안 받으면 여기서 바로 중단되어버려 밑정보들은 입력받지 못한다. */
+   let country = map.get("country");
+   let favorite = map.get("favorite");
+
+   console.log(id);
+   console.log(pass);
+  // console.log(Elvis);
+   console.log(country);
+   console.log(favorite);
+
+   var paragraph = document.getElementById("login_user");
+   paragraph.textContent += id +"!!"; 
+
+  // var paragraph1 = document.getElementById("intro");
+  // paragraph1.textContent += Elvis; 
+   
+   var paragraph2 = document.getElementById("country");
+   paragraph2.textContent += country; 
+
+   var paragraph3 = document.getElementById("favorite");
+   paragraph3.textContent += favorite; 
+});
+
+</script>
+</head>
+<body>
+
+<h1 style="text-align: center;"> Hello World! <br>
+
+Welcome to My Web Server <br>
+<p id="login_user"></p></h1><br>
+
+<p id="country" style="text-align: center;">가고 싶은 나라 : </p><br>
+<p id="favorite" style="text-align: center;">보고 싶은 것 : </p><br>
+
+<!-- <button onclick="outParam();" >click me</button> -->
+
+</body>
+</html>

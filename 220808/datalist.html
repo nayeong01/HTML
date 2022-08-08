@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>데이터 목록 입력창</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h3>검색 목록</h3>
+    <hr>
+<form name="sform" action="login_confirm.html" method="get" target="_blank">
+	이름 : <input name="id" type="text" value=""><br>
+	암호 : <input name="pass" type="password" value="" maxlength="4"><br>
+    나라 : <input name="country" type="text" list="countries"><br>
+			<datalist id="countries">
+				<option value="가나">
+				<option value="스위스">
+				<option value="브라질">
+			</datalist>
+
+    보고싶은것 : <input name="favorite" type="text" list="what"><br>
+			    <datalist id="what">
+				    <option value="산">
+				    <option value="바다">
+				    <option value="도시">
+			</datalist>
+
+        <input type="submit" value="완료"> 
+</form>
+</body>
+</html>
